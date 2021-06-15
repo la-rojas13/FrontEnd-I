@@ -37,7 +37,10 @@ span {
   font-style: italic;
   font-weight: bold;
 }
-
+.especificacion{
+  list-style-type: none;
+  margin-left: 9%;
+}
 footer {
   display: flex;
   color: white;
