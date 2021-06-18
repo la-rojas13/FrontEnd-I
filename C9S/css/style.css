@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*Header*/
+header{
+    color: white;
+}
+.list{
+    list-style-type: none;
+}
+ 
+.secondary-header{
+    background-color: black;
+}
+.main-header{
+    background-color:#F0A83E;
+}
+.ul-main-header li > a{
+    color: white;
+    text-decoration: none;
+}
+/*Banner*/
+.banner{
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+.btn-banner{
+    background-color: #F0A83E;
+    color:white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/*Productos*/
+.product-section{
+    color:#3C2313;
+}
+.product-price{
+    color: #F0A83E;
+}
+/*Footer*/
+footer{
+    background-color:#3C2313;
+    color: white;
+}
+.secundary-footer{
+    background-color: black;
+    text-align: center;
+}
+.iconos-footer{
+    margin-left: 2%;
+}
+.i-footer{
+    align-items: center;
+    background-color: gray;
+    border-radius:50%;
+    border: 2px solid rgb(83, 83, 83);
+    display: flex;
+    font-size: 30px;
+    height: 55px;
+    justify-content: center;;
+    width: 55px;
+}
