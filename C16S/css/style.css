@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a,
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+/* HEADER */
+.secundary-header {
+  background-color: #1CD1B0;
+  height: 23px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.secundary-header span {
+  padding-left: 1.5rem;
+}
+
+.main-header {
+  background-color: #00669F;
+  color: white;
+  height: 70px;
+  text-transform: capitalize;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/*BODY*/
+main {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FORM  VIEW */
+div.form-view {
+  width: 400px;
+}
+
+div.form-view h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333333;
+}
+
+section.form-container {
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+
+section.form-container input,
+select {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+section.form-container input::placeholder {
+  padding-left: 0.7rem;
+}
+
+section.form-container span {
+  text-align: center;
+}
+
+section.form-container span a {
+  color: #00669F;
+  text-decoration: none;
+}
+
+section.form-container input[type="submit"] {
+  font-weight: 700;
+  background-color: #1CD1B0;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+section.form-container input[type="reset"] {
+  font-weight: 700;
+  background-color: #888888;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+}
+
+textarea {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/*HOME*/
+main.home-cards{
+  height: 100vh;
+}
+.main-nav {
+  background-color: #001D2D;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.main-nav nav ul li {
+  display: inline-block;
+  padding: 0.7rem;
+}
+
+.main-nav nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.cards-container {
+  margin: auto;
+  display: flex;
+}
+
+.item-card {
+  width: 300px;
+  height: 530px;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  margin: 100px 20px;
+  text-align: center;
+  position: relative;
+
+}
+
+.card-img {
+  width: 300px;
+  height: 193px;
+}
+
+.img-batman {
+  background-image: url('../img/batman-background.png');
+}
+
+.img-harley {
+  background-image: url('../img/harley-background.png');
+}
+
+.card-content {
+  margin: 5px 20px;
+  position: relative;
+  bottom: 60px;
+}
+
+.card-content p {
+  height: 150px;
+}
+
+img.heart-icon {
+  right: 115px;
+  position: relative;
+  top: 15px;
+}
+
+img.img-profile {
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 25%);
+  bottom: 75px;
+}
+
+img.img-profile.detail {
+  top: 30px;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+span.sticky-btn {
+  position: absolute;
+  top: 65%;
+  right: 50px;
+  display: flex;
+  border-radius: 50%;
+  height: 50px;
+  background-color: #00669F;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+span.sticky-btn a {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.item-card-title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.harley-title {
+  text-transform: none;
+}
+
+button.btn-card {
+  background-color: #00669F;
+  width: 130px;
+  height: 50px;
+  color: white;
+  border: none;
+  margin: auto;
+}
+
+button.btn-card a {
+  color: white;
+  text-decoration: none;
+}
+
+/*REGISTRO*/
+.register-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.register-btn input {
+  width: 180px;
+}
+
+/*DETAIL VIEW*/
+section.card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.harley-detail {
+  background-image: url('../img/bg\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.harley-detail-description {
+  position: relative;
+  width: 450px;
+  height: 400px;
+  background-color: white;
+  border-radius: 45;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+.detail-highlight {
+  color: #2C0187;
+}
+
+.detail-header {
+  margin-top: 6%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-header img {
+  position: absolute;
+  left: 30px;
+}
+
+.detail-header h2 {
+  color: #2C0187;
+  text-decoration: underline;
+}
+
+.detail-content {
+  margin: 10px 20px;
+}
+
+.detail-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.detail-iconos img {
+  width: 50px;
+}
+
+.detail-footer {
+  background-color: #2C0187;
+  height: 30%;
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #00669F;
+  position: fixed;
+  color: white;
+  top: auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
