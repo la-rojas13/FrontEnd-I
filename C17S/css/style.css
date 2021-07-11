@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a,
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+/* HEADER */
+.secundary-header {
+  background-color: #1CD1B0;
+  height: 23px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.secundary-header span {
+  padding-left: 1.5rem;
+}
+
+.main-header {
+  background-color: #00669F;
+  color: white;
+  height: 70px;
+  text-transform: capitalize;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/*BODY*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FORM  VIEW */
+.form-title {
+  margin: 30px;
+}
+
+div.form-view {
+  margin: 50px 0;
+  width: 400px;
+  height: 200px;
+}
+
+div.form-view h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333333;
+}
+
+section.form-container {
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+
+section.form-container input,
+select {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+section.form-container input::placeholder {
+  padding-left: 0.7rem;
+}
+
+section.form-container span {
+  text-align: center;
+}
+
+section.form-container span a {
+  color: #00669F;
+  text-decoration: none;
+}
+
+section.form-container input[type="submit"],
+.añadir-btn {
+  font-weight: 700;
+  background-color: #1CD1B0;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+section.form-container input[type="reset"] {
+  font-weight: 700;
+  background-color: #888888;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+}
+
+textarea {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/*HOME*/
+.main-nav {
+  background-color: #001D2D;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.main-nav nav ul li {
+  display: inline-block;
+  padding: 0.7rem;
+}
+
+.main-nav nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.cards-container {
+  display: flex;
+}
+
+.item-card {
+  width: 300px;
+  height: 530px;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  margin: 100px 20px;
+  text-align: center;
+  position: relative;
+
+}
+
+.card-img {
+  width: 300px;
+  height: 193px;
+}
+
+.img-batman {
+  background-image: url('../img/batman-background.png');
+}
+
+.img-harley {
+  background-image: url('../img/harley-background.png');
+}
+
+.card-content {
+  margin: 5px 20px;
+  position: relative;
+  bottom: 60px;
+}
+
+.card-content p {
+  height: 150px;
+}
+
+img.heart-icon {
+  right: 115px;
+  position: relative;
+  top: 15px;
+}
+
+img.img-profile {
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 25%);
+  bottom: 75px;
+}
+
+img.img-profile.detail {
+  top: 30px;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+span.sticky-btn {
+  position: absolute;
+  top: 65%;
+  right: 50px;
+  display: flex;
+  border-radius: 50%;
+  height: 50px;
+  background-color: #00669F;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+span.sticky-btn:hover {
+  background-color: #001D2D;
+}
+
+span.sticky-btn a {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.item-card-title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.harley-title {
+  text-transform: none;
+}
+
+button.btn-card {
+  background-color: #00669F;
+  width: 130px;
+  height: 50px;
+  color: white;
+  border: none;
+  margin: auto;
+}
+
+button.btn-card a {
+  color: white;
+  text-decoration: none;
+}
+
+/*REGISTRO*/
+.register-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.register-btn input {
+  width: 180px;
+}
+
+/*AÑADIR*/
+section.form-buy {
+  width: 650px;
+  height: 560px;
+  background-color: #00669F;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  margin: 5% 0;
+}
+
+div.form-container {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.form-column {
+  width: 300px;
+  text-align: left;
+}
+
+div.form-column input[type="text"],
+textarea,
+input[type="date"] {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+
+div.form-column input[type="file"] {
+  width: 350px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+div.form-column textarea {
+  height: 200px;
+}
+
+div.form-checkbox {
+  margin-bottom: 5px;
+}
+
+div.form-select h4 {
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+div.form-checkobx div {
+  padding-bottom: 4px;
+}
+
+hr {
+  margin: 15px 0;
+  color: white;
+}
+
+.añadir-btn {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.añadir-btn:hover {
+  background-color: #001D2D;
+  color: white;
+}
+
+/*DETAIL VIEW*/
+section.card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.harley-detail {
+  background-image: url('../img/bg\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.harley-detail-description {
+  position: relative;
+  width: 450px;
+  height: 400px;
+  background-color: white;
+  border-radius: 45;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+.detail-highlight {
+  color: #2C0187;
+}
+
+.detail-header {
+  margin-top: 6%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-header img {
+  position: absolute;
+  left: 30px;
+}
+
+.detail-header h2 {
+  color: #2C0187;
+  text-decoration: underline;
+}
+
+.detail-content {
+  margin: 10px 20px;
+}
+
+.detail-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.detail-iconos img {
+  width: 50px;
+}
+
+.detail-footer {
+  background-color: #2C0187;
+  height: 30%;
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #00669F;
+  position: fixed;
+  color: white;
+  top: auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
