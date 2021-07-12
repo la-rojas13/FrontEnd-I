@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #222222;
+  --secundary-color: #F3F3F3;
+  --tertiary-color: #C4C4C4;
+  --quaternary-color: #D01418;
+  --primary-font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--secundary-color);
+}
+
+/*HEADER*/
+header {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+div.main-nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.mobile-menu {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+nav ul li a {
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+div.main-nav i {
+  font-size: 1.6rem;
+  color: var(--quaternary-color);
+  cursor: pointer;
+}
+
+/*HERO*/
+section.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../img/bg-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(--secundary-color);
+  text-align: center;
+}
+
+section.hero h1 {
+  font-size: 2.5rem;
+}
+
+section.hero span.highlight-text {
+  color: var(--quaternary-color);
+}
+
+section.hero button {
+  background-color: var(--quaternary-color);
+  border: none;
+  color: var(--secundary-color);
+  width: 220px;
+  height: 60px;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/*Productos destacados*/
+section.highlighted-products,
+section.star-products {
+  margin-top: 5%;
+  text-align: center;
+}
+
+div.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5%;
+}
+
+div.card-item {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.card-item .img-ps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card-item .text {
+  border-top: 1px solid var(--tertiary-color);
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+div.text h6 {
+  color: #619D00;
+}
+
+div.card-item .detail-card:nth-of-type(1) {
+  flex-grow: 3;
+
+}
+
+div.card-item .detail-card:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+/*Productos estrella*/
+div.img-card {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  color: white;
+}
+
+div.img-card p {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+div.main-footer {
+  background-color: var(--primary-color);
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+}
+
+div.rs-box p {
+  font-size: 1.8rem;
+}
+
+div.rs-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+i.icon-rs {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+i.fa-twitter {
+  color: #14AED0;
+}
+
+i.fa-facebook-f {
+  color: #1476D0;
+}
+
+i.fa-instagram {
+  color: #CE0CFF;
+  ;
+}
+
+div.copright {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*------TABLET-------------*/
+
+@media (max-width:768px) {
+  div.main-nav {
+    display: none;
+  }
+
+  div.mobile-menu {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  /*SECTION*/
+  div.container {
+    flex-direction: column;
+  }
+
+  div.card-item {
+    margin-bottom: 20px;
+  }
+}
+
+/*-------MOBILE---------*/
+@media (max-width:425px) {
+  section.hero h1 {
+    width: 250px;
+    font-size: 1.8rem;
+  }
+
+  div.rs-box p {
+    font-size: 1.5rem;
+  }
+
+  div.main-footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  div.img-card img {
+    max-width: 300px;
+  }
+
+  div.img-card p {
+    right: 20%;
+  }
+
+  div.copright {
+    font-size: 0.8rem;
+  }
+
+}
