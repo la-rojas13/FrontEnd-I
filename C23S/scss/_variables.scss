@@ -1,0 +1,28 @@
+/*VARIABLES*/
+
+/*Colores*/
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$shadow: #92f7f2;
+$default: #000000;
+
+/*Font */
+$font-primary: Arial,
+Helvetica,
+sans-serif;
+$font-secundary: Impact,
+Haettenschweiler,
+'Arial Narrow Bold',
+sans-serif;
+
+/*Sizes*/
+$size: 55px;
+$line-height: 70px;
+$letter-spacing: 10px;
+
+@mixin flex($justify-prop, $align-prop) {
+    display: flex;
+    justify-content: $justify-prop;
+    align-items: $align-prop;
+}

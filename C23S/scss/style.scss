@@ -1,0 +1,141 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+header {
+    @include flex(space-between, center);
+    margin: 25px $size;
+
+    h2 {
+        font-size: $size - 25;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 20px;
+
+        a {
+            text-decoration: none;
+            color: $default;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+main {
+    margin: 0 $size;
+}
+
+section,
+footer {
+    margin: 40px 0;
+    @include flex(space-between, center);
+}
+
+.hero-content,
+.hero-img {
+    width: 50%;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.hero-content {
+    margin-top: -2%;
+
+    h1 {
+        font-family: $font-secundary;
+        font-size: $size;
+        line-height: $line-height;
+        width: 60%;
+        letter-spacing: $letter-spacing;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: $color-primary;
+        line-height: $line-height /2;
+        margin-bottom: 40px;
+    }
+
+    button {
+        background-color: $bg-primary;
+        width: 100px;
+        height: 60px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 20px;
+        border: 1px dashed $default;
+        font-size: 16px;
+
+    }
+}
+
+.blue-rectangle {
+    width: 200px;
+    height: 40px;
+    background-color: $bg-primary;
+    z-index: -1;
+    position: absolute;
+}
+
+.blue-rectangle-article {
+    @extend .blue-rectangle;
+    width: 20px;
+    height: 10px;
+}
+
+.circle-style {
+    border-radius: 50%;
+    border: 1px solid $default;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: -5px 0px $bg-primary;
+}
+
+article {
+    width: 30%;
+    background-color: $bg-secondary;
+    padding: 10px 30px;
+    z-index: -2;
+
+    .number-item,
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        width: 80%;
+    }
+}
+
+.social-media {
+    @include flex(space-between, center);
+
+    div {
+        margin-right: 20px;
+        border: none;
+    }
+}
+
+footer {
+    margin: 40px $size;
+}
