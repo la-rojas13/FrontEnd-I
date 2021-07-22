@@ -1,0 +1,17 @@
+/*VARIABLES*/
+//Fuente
+$primary-font:'Roboto',
+sans-serif;
+
+//Colores
+$primary-color:#F0A83E;
+$secundary-color: #3C2313;
+$white-color:#ffffff;
+$default-color:#000000;
+
+//Funciones
+@mixin flex($align-prop, $just-prop) {
+    display: flex;
+    align-items: $align-prop;
+    justify-content: $just-prop;
+}
